@@ -4,11 +4,17 @@ import { getEndpointDetails, ParameterField, CodeSample } from '../lib/openapi';
 interface ApiExplorerProps {
   endpoint?: string;
   method?: string;
+  reference?: string;
+  parameters?: Record<string, any>;
+  initialValues?: Record<string, any>;
 }
 
 export const ApiExplorer: React.FC<ApiExplorerProps> = ({
   endpoint = '/transaction/initialize',
   method = 'POST',
+  reference,
+  parameters,
+  initialValues,
 }) => {
   const normMethod = method.toUpperCase();
   const normPath = endpoint;
@@ -35,14 +41,20 @@ export const ApiExplorer: React.FC<ApiExplorerProps> = ({
     const storedKey = localStorage.getItem('paystack_secret_key');
     if (storedKey) setApiKey(storedKey);
 
-    const initialData: Record<string, any> = {};
+    const initialData: Record<string, any> = { ...(parameters || initialValues || {}) };
     allSpecFields.forEach((field) => {
-      if (field.example !== undefined) {
-        initialData[field.name] = field.example;
-      } else if (field.enum && field.enum.length > 0) {
-        initialData[field.name] = field.enum[0];
+      if (initialData[field.name] === undefined) {
+        if (field.example !== undefined) {
+          initialData[field.name] = field.example;
+        } else if (field.enum && field.enum.length > 0) {
+          initialData[field.name] = field.enum[0];
+        }
       }
     });
+
+    if (reference) {
+      initialData['reference'] = reference;
+    }
 
     if (xIdempotency && !initialData['idempotency_key']) {
       initialData['idempotency_key'] = `idemp_${Math.random().toString(36).substring(2, 10)}`;
