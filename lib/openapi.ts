@@ -33,6 +33,7 @@ export interface EndpointDetails {
 export interface EndpointRoute {
   category: string;
   endpoint: string;
+  aliases?: string[];
   path: string;
   method: string;
   summary: string;
@@ -188,15 +189,25 @@ export function getAllEndpointRoutes(): EndpointRoute[] {
       const tag = op.tags?.[0] || 'General';
       const categorySlug = slugify(tag);
       
-      // Determine endpoint slug from operationId or path
-      let endpointSlug = slugify(op.operationId || pathUrl.replace(/^\//, ''));
-      if (!endpointSlug || endpointSlug === categorySlug) {
-        endpointSlug = `${method}-${slugify(pathUrl.replace(/^\//, ''))}`;
+      // Determine primary endpoint slug & aliases
+      const opIdSlug = op.operationId ? slugify(op.operationId) : '';
+      const pathClean = pathUrl.replace(/^\//, '').replace(/[\{\}:]/g, '');
+      const pathParts = pathClean.split('/');
+      const lastPathPartSlug = slugify(pathParts[pathParts.length - 1] || '');
+
+      let primarySlug = lastPathPartSlug;
+      if (!primarySlug || primarySlug === categorySlug) {
+        primarySlug = opIdSlug || slugify(`${method}-${pathClean}`);
       }
+
+      const aliases = Array.from(new Set([opIdSlug, slugify(`${method}-${pathClean}`), slugify(pathClean)]).values()).filter(
+        (a) => a && a !== primarySlug
+      );
 
       routes.push({
         category: categorySlug,
-        endpoint: endpointSlug,
+        endpoint: primarySlug,
+        aliases,
         path: pathUrl,
         method: method.toUpperCase(),
         summary: op.summary || '',
