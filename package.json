@@ -4,14 +4,18 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "sync-spec": "node scripts/fetch-enriched-spec.js && node scripts/compile-openapi.js",
+    "compile-spec": "node scripts/compile-openapi.js",
+    "build": "npm run sync-spec && next build",
     "start": "next start",
     "lint": "eslint"
   },
   "dependencies": {
+    "@markdoc/next.js": "^0.5.0",
     "next": "16.3.2",
     "react": "19.2.8",
-    "react-dom": "19.2.8"
+    "react-dom": "19.2.8",
+    "yaml": "^2.9.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
