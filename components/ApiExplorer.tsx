@@ -183,10 +183,14 @@ export const ApiExplorer: React.FC<ApiExplorerProps> = ({
         )}
 
         {allSpecFields.map((field) => (
-          <div key={field.name} className="space-y-1">
+          <div key={`${field.in}-${field.name}`} className="space-y-1">
             <div className="flex justify-between items-center">
-              <label className="text-xs font-medium text-slate-300 font-mono">
-                {field.name} {field.required && <span className="text-rose-400">*</span>}
+              <label className="text-xs font-medium text-slate-300 font-mono flex items-center gap-1.5">
+                <span>{field.name}</span>
+                {field.required && <span className="text-rose-400">*</span>}
+                <span className="text-[9px] font-mono text-slate-500 bg-slate-950 px-1.5 py-0.5 rounded border border-slate-800 uppercase">
+                  {field.in}
+                </span>
               </label>
               {field.name === 'reference' && (
                 <button
@@ -198,23 +202,39 @@ export const ApiExplorer: React.FC<ApiExplorerProps> = ({
                 </button>
               )}
             </div>
+
             {field.enum && field.enum.length > 0 ? (
               <select
                 value={formData[field.name] || ''}
                 onChange={(e) => handleInputChange(field.name, e.target.value)}
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-slate-200 font-mono"
+                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-slate-200 font-mono focus:border-emerald-500 outline-none"
               >
                 {field.enum.map((opt) => (
                   <option key={opt} value={opt}>{opt}</option>
                 ))}
+              </select>
+            ) : field.type === 'boolean' ? (
+              <select
+                value={formData[field.name] !== undefined ? String(formData[field.name]) : ''}
+                onChange={(e) => handleInputChange(field.name, e.target.value === 'true')}
+                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-slate-200 font-mono focus:border-emerald-500 outline-none"
+              >
+                <option value="true">true</option>
+                <option value="false">false</option>
               </select>
             ) : (
               <input
                 type={field.type === 'integer' || field.type === 'number' ? 'number' : 'text'}
                 value={formData[field.name] !== undefined ? formData[field.name] : ''}
                 onChange={(e) => handleInputChange(field.name, e.target.value)}
-                placeholder={field.example ? String(field.example) : `e.g. ${field.name}`}
-                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-slate-200 font-mono"
+                placeholder={
+                  field.example
+                    ? String(field.example)
+                    : field.type === 'array'
+                    ? 'e.g. item1, item2'
+                    : `e.g. ${field.name}`
+                }
+                className="w-full bg-slate-950 border border-slate-800 rounded-lg px-3 py-2 text-xs text-slate-200 font-mono focus:border-emerald-500 outline-none transition-colors"
               />
             )}
           </div>

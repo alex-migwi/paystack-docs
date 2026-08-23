@@ -107,6 +107,31 @@ function cleanUndefined<T>(obj: T): T {
 }
 
 /**
+ * Extract all properties from a schema (including allOf combinations)
+ */
+function extractPropertiesFromSchema(schemaObj: any): { properties: Record<string, any>; required: string[] } {
+  const schema = resolveSchema(schemaObj);
+  if (!schema) return { properties: {}, required: [] };
+
+  const properties: Record<string, any> = {};
+  const required: string[] = Array.isArray(schema.required) ? [...schema.required] : [];
+
+  if (schema.properties) {
+    Object.assign(properties, schema.properties);
+  }
+
+  if (Array.isArray(schema.allOf)) {
+    for (const sub of schema.allOf) {
+      const extracted = extractPropertiesFromSchema(sub);
+      Object.assign(properties, extracted.properties);
+      required.push(...extracted.required);
+    }
+  }
+
+  return { properties, required: Array.from(new Set(required)) };
+}
+
+/**
  * Extract parameter & request body schema details for a given endpoint and HTTP method
  */
 export function getEndpointDetails(endpoint: string, method: string): EndpointDetails {
@@ -118,42 +143,54 @@ export function getEndpointDetails(endpoint: string, method: string): EndpointDe
   const requestBodyFields: ParameterField[] = [];
 
   if (operation) {
-    // 1. Path & Query parameters
-    if (Array.isArray(operation.parameters)) {
-      for (const param of operation.parameters) {
-        const schema = resolveSchema(param.schema);
-        parameters.push({
-          name: param.name,
-          in: param.in || 'query',
-          type: schema?.type || (typeof param.example === 'number' ? 'integer' : 'string'),
-          required: Boolean(param.required),
-          description: param.description || '',
-          ...(schema?.enum ? { enum: schema.enum } : {}),
-          ...(param.example !== undefined ? { example: param.example } : {}),
-        });
-      }
+    // 1. Path & Query parameters (combine path-level and operation-level parameters)
+    const combinedParams = [
+      ...(Array.isArray(pathObj.parameters) ? pathObj.parameters : []),
+      ...(Array.isArray(operation.parameters) ? operation.parameters : []),
+    ];
+
+    const seenParams = new Set<string>();
+
+    for (const rawParam of combinedParams) {
+      const param = resolveSchema(rawParam);
+      if (!param || !param.name) continue;
+
+      const paramKey = `${param.in || 'query'}:${param.name}`;
+      if (seenParams.has(paramKey)) continue;
+      seenParams.add(paramKey);
+
+      const schema = resolveSchema(param.schema);
+      parameters.push({
+        name: param.name,
+        in: param.in || 'query',
+        type: schema?.type || (typeof param.example === 'number' ? 'integer' : 'string'),
+        required: Boolean(param.required),
+        description: param.description || '',
+        ...(schema?.enum ? { enum: schema.enum } : {}),
+        ...(param.example !== undefined ? { example: param.example } : {}),
+      });
     }
 
     // 2. Request body parameters (JSON / form-urlencoded)
-    const requestBodyContent = operation.requestBody?.content;
-    const bodySchemaObj = requestBodyContent?.['application/json']?.schema || requestBodyContent?.['application/x-www-form-urlencoded']?.schema;
+    const rawRequestBody = resolveSchema(operation.requestBody);
+    const requestBodyContent = rawRequestBody?.content;
+    const bodySchemaObj =
+      requestBodyContent?.['application/json']?.schema ||
+      requestBodyContent?.['application/x-www-form-urlencoded']?.schema;
 
     if (bodySchemaObj) {
-      const schema = resolveSchema(bodySchemaObj);
-      if (schema && schema.properties) {
-        const requiredList: string[] = schema.required || [];
-        for (const [propName, propDef] of Object.entries<any>(schema.properties)) {
-          const resolvedProp = resolveSchema(propDef);
-          requestBodyFields.push({
-            name: propName,
-            in: 'body',
-            type: resolvedProp?.type || 'string',
-            required: requiredList.includes(propName),
-            description: resolvedProp?.description || '',
-            ...(resolvedProp?.enum ? { enum: resolvedProp.enum } : {}),
-            ...(resolvedProp?.example !== undefined ? { example: resolvedProp.example } : {}),
-          });
-        }
+      const { properties, required: requiredList } = extractPropertiesFromSchema(bodySchemaObj);
+      for (const [propName, propDef] of Object.entries<any>(properties)) {
+        const resolvedProp = resolveSchema(propDef);
+        requestBodyFields.push({
+          name: propName,
+          in: 'body',
+          type: resolvedProp?.type || 'string',
+          required: requiredList.includes(propName),
+          description: resolvedProp?.description || '',
+          ...(resolvedProp?.enum ? { enum: resolvedProp.enum } : {}),
+          ...(resolvedProp?.example !== undefined ? { example: resolvedProp.example } : {}),
+        });
       }
     }
   }
