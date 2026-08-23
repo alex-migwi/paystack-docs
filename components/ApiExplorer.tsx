@@ -86,12 +86,29 @@ export const ApiExplorer: React.FC<ApiExplorerProps> = ({
     return resolved;
   };
 
+  const getRequestBody = () => {
+    if (isGetMethod) return undefined;
+    const bodyObj: Record<string, any> = {};
+    endpointDetails.requestBodyFields.forEach((field) => {
+      if (formData[field.name] !== undefined && formData[field.name] !== '') {
+        if (field.type === 'integer' || field.type === 'number') {
+          bodyObj[field.name] = Number(formData[field.name]);
+        } else if (field.type === 'boolean') {
+          bodyObj[field.name] = Boolean(formData[field.name]);
+        } else {
+          bodyObj[field.name] = formData[field.name];
+        }
+      }
+    });
+    return Object.keys(bodyObj).length > 0 ? bodyObj : undefined;
+  };
+
   const executeApiCall = async () => {
     setLoading(true);
     setResponse(null);
     try {
       const fullPath = getResolvedEndpoint();
-      const body = !isGetMethod ? formData : undefined;
+      const body = getRequestBody();
 
       const headers: Record<string, string> = { 'Content-Type': 'application/json' };
       if (apiKey) headers['Authorization'] = `Bearer ${apiKey}`;
