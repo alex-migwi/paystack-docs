@@ -6,7 +6,15 @@
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?style=flat-square&logo=typescript)](https://www.typescriptlang.org/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-v4-38BDF8?style=flat-square&logo=tailwindcss)](https://tailwindcss.com/)
 
-An enterprise-grade, self-documenting developer portal for the Paystack API. Built with Next.js 16 (App Router), React 19, Stripe Markdoc, and TypeScript, this application compiles enriched OpenAPI 3.0 specifications into an interactive, multi-language API documentation portal with zero spec drift.
+A self-documenting developer portal for the Paystack API based on an enriched version of the Public Paystack OpenAPI Spec. Built with Next.js 16 (App Router), React 19, Stripe Markdoc, and TypeScript, this application compiles enriched OpenAPI 3.0 specifications into an interactive, multi-language API documentation portal with zero spec drift.
+
+---
+
+### Proof of Concept
+
+This project was created as part of the DevEx Lead technical assessment at Paystack.
+
+It demonstrates the proposed approach, developer experience, and technical thinking behind the solution. The implementation is intentionally open to further refinement and iteration.
 
 ---
 
@@ -143,7 +151,7 @@ For detailed dispatch setup instructions, consult [`docs/DISPATCH_GUIDE.md`](./d
 
 ## License & Assessment Notice
 
-This repository was created by Alex Muturi as part of the technical assessment for the DevEx Lead position at Paystack.
+This project was created as part of the DevEx Lead technical assessment at Paystack. It is a proof of concept provided for evaluation purposes.
 
-This project is licensed under the [Candidate Assessment License](LICENSE) strictly for candidate evaluation and review purposes. All rights to production deployment, commercial usage, or integration into Paystack/Stripe products are reserved pending employment or licensing agreements.
+See [LICENSE](LICENSE) for the assessment terms.
 
