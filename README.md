@@ -141,6 +141,9 @@ For detailed dispatch setup instructions, consult [`docs/DISPATCH_GUIDE.md`](./d
 
 ---
 
-## License
+## License & Assessment Notice
 
-This project is open source and available under the [MIT License](LICENSE).
+This repository was created by Alex Muturi as part of the technical assessment for the DevEx Lead position at Paystack.
+
+This project is licensed under the [Candidate Assessment License](LICENSE) strictly for candidate evaluation and review purposes. All rights to production deployment, commercial usage, or integration into Paystack/Stripe products are reserved pending employment or licensing agreements.
+
