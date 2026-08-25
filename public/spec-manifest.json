@@ -5,7 +5,7 @@
     "hash": "5c2564ca911ec0907491bd0046578606a5b89aaa31d540cc57d99fd51420f463",
     "summary": "Initialize Transaction",
     "tag": "Transaction",
-    "updatedAt": "2026-08-23T23:25:29.435Z"
+    "updatedAt": "2026-08-25T00:22:38.614Z"
   },
   "POST /transaction/charge_authorization": {
     "path": "/transaction/charge_authorization",
@@ -13,7 +13,7 @@
     "hash": "d1ea8effe5c55dd57e603843298cc1b0c5cfe6bd871408dc824c06408d294ced",
     "summary": "Charge Authorization",
     "tag": "Transaction",
-    "updatedAt": "2026-08-23T23:25:29.435Z"
+    "updatedAt": "2026-08-25T00:22:38.614Z"
   },
   "POST /transaction/partial_debit": {
     "path": "/transaction/partial_debit",
@@ -21,7 +21,7 @@
     "hash": "4636aa1de39c38bfbe5e8d1ca14e9ac5f0977a4db63deb00742457d29c9fef52",
     "summary": "Partial Debit",
     "tag": "Transaction",
-    "updatedAt": "2026-08-23T23:25:29.435Z"
+    "updatedAt": "2026-08-25T00:22:38.614Z"
   },
   "GET /transaction/verify/{reference}": {
     "path": "/transaction/verify/{reference}",
@@ -29,7 +29,7 @@
     "hash": "9905ffcd3c29dffe1f64e172fed5728ae8ea9d81a5cca8579102cc88badc205e",
     "summary": "Verify Transaction",
     "tag": "Transaction",
-    "updatedAt": "2026-08-23T23:25:29.435Z"
+    "updatedAt": "2026-08-25T00:22:38.614Z"
   },
   "GET /transaction": {
     "path": "/transaction",
@@ -37,7 +37,7 @@
     "hash": "2efe966e0045af621f65fd5ebec459ce7663565e104a887ec2b263e5eb1b9b40",
     "summary": "List Transactions",
     "tag": "Transaction",
-    "updatedAt": "2026-08-23T23:25:29.435Z"
+    "updatedAt": "2026-08-25T00:22:38.614Z"
   },
   "GET /transaction/{id}": {
     "path": "/transaction/{id}",
@@ -45,7 +45,7 @@
     "hash": "df87e131eafd478df9dd1cf3f0f6f7627b4dd1a778760a852e56529332ffb326",
     "summary": "Fetch Transaction",
     "tag": "Transaction",
-    "updatedAt": "2026-08-23T23:25:29.435Z"
+    "updatedAt": "2026-08-25T00:22:38.614Z"
   },
   "GET /transaction/timeline/{id}": {
     "path": "/transaction/timeline/{id}",
@@ -53,7 +53,7 @@
     "hash": "7403614940b7e9934a7ccdc575a4c6d397a5bb6616c61a144b16886eba318700",
     "summary": "Fetch Transaction Timeline",
     "tag": "Transaction",
-    "updatedAt": "2026-08-23T23:25:29.435Z"
+    "updatedAt": "2026-08-25T00:22:38.614Z"
   },
   "GET /transaction/totals": {
     "path": "/transaction/totals",
@@ -61,7 +61,7 @@
     "hash": "c042586a20c307d1ce2ab5a18b43e8b4385180a18bb2ab396fe6ba503ecee208",
     "summary": "Transaction Totals",
     "tag": "Transaction",
-    "updatedAt": "2026-08-23T23:25:29.436Z"
+    "updatedAt": "2026-08-25T00:22:38.614Z"
   },
   "GET /transaction/export": {
     "path": "/transaction/export",
@@ -69,7 +69,7 @@
     "hash": "87268e5903da8ab5735e2fb42145be98c3ef96b651083cdeaeea1040edcf0df4",
     "summary": "Export Transactions",
     "tag": "Transaction",
-    "updatedAt": "2026-08-23T23:25:29.436Z"
+    "updatedAt": "2026-08-25T00:22:38.614Z"
   },
   "POST /charge": {
     "path": "/charge",
@@ -77,7 +77,7 @@
     "hash": "a5126c736b334c8cc5489b4ead0f88b205dd7c770dc921b53a098791389a66b5",
     "summary": "Create Charge",
     "tag": "Charge",
-    "updatedAt": "2026-08-23T23:25:29.436Z"
+    "updatedAt": "2026-08-25T00:22:38.614Z"
   },
   "POST /charge/submit_pin": {
     "path": "/charge/submit_pin",
@@ -85,7 +85,7 @@
     "hash": "8498f89ccd2f7fbfc03e04171de3522616757db047078e09207cbad989bd2519",
     "summary": "Submit PIN",
     "tag": "Charge",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.614Z"
   },
   "POST /charge/submit_otp": {
     "path": "/charge/submit_otp",
@@ -93,7 +93,7 @@
     "hash": "b0728225f59af28cba5bd598554117b8fd1447a86f2d854562834dded7806ce8",
     "summary": "Submit OTP",
     "tag": "Charge",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.614Z"
   },
   "POST /charge/submit_phone": {
     "path": "/charge/submit_phone",
@@ -101,7 +101,7 @@
     "hash": "21c519d0317af11565c4e2c7685859f48b72040bf1b59fb4a096245cd7d9dc12",
     "summary": "Submit Phone",
     "tag": "Charge",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.614Z"
   },
   "POST /charge/submit_birthday": {
     "path": "/charge/submit_birthday",
@@ -109,7 +109,7 @@
     "hash": "0de852c4d5972067990c4c0a55f32fb33f5bf0a8aa0c066d4f6eda8eff1f0a89",
     "summary": "Submit Birthday",
     "tag": "Charge",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.614Z"
   },
   "POST /charge/submit_address": {
     "path": "/charge/submit_address",
@@ -117,7 +117,7 @@
     "hash": "6b0e4826435da790054fb518ed8d3c2948b66750be1e4e4f07fc1a124f9d5aea",
     "summary": "Submit Address",
     "tag": "Charge",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.614Z"
   },
   "GET /charge/{reference}": {
     "path": "/charge/{reference}",
@@ -125,7 +125,7 @@
     "hash": "5fc4a0d8566a369aa546c6c08164076be274b7280bb423faff61e9de186e1066",
     "summary": "Check pending charge",
     "tag": "Charge",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "GET /bulkcharge": {
     "path": "/bulkcharge",
@@ -133,7 +133,7 @@
     "hash": "03ca656b636de3cf00247dbf290cb16921f39cd5a60e140621b92af3d3a63b8b",
     "summary": "List Bulk Charge Batches",
     "tag": "Bulk Charge",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "POST /bulkcharge": {
     "path": "/bulkcharge",
@@ -141,7 +141,7 @@
     "hash": "5034e071c9eda5fb8a134ca76ca36bca844a2e0accb39ce541c84eb36140c6d9",
     "summary": "Initiate Bulk Charge",
     "tag": "Bulk Charge",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "GET /bulkcharge/{code}": {
     "path": "/bulkcharge/{code}",
@@ -149,7 +149,7 @@
     "hash": "64111fe47ca174ab5b4c7560e93a4ea65384170cf266bd4c22f961376005f103",
     "summary": "Fetch Bulk Charge Batch",
     "tag": "Bulk Charge",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "GET /bulkcharge/{code}/charges": {
     "path": "/bulkcharge/{code}/charges",
@@ -157,7 +157,7 @@
     "hash": "0033f8686c085600f23c0810812058a1753758f318178fb59f4ae726bb3fc822",
     "summary": "List Charges in a Batch",
     "tag": "Bulk Charge",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "GET /bulkcharge/pause/{code}": {
     "path": "/bulkcharge/pause/{code}",
@@ -165,7 +165,7 @@
     "hash": "c3534d9622e360f578061c46c452203ab90376e147798db54fa7c2aa8c16c5d6",
     "summary": "Pause Bulk Charge Batch",
     "tag": "Bulk Charge",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "GET /bulkcharge/resume/{code}": {
     "path": "/bulkcharge/resume/{code}",
@@ -173,7 +173,7 @@
     "hash": "9dede9fdd2a8b1db8c3317fa1cbaeb842870a2f6012ac6ded87a19c1a19c8767",
     "summary": "Resume Bulk Charge Batch",
     "tag": "Bulk Charge",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "GET /subaccount": {
     "path": "/subaccount",
@@ -181,7 +181,7 @@
     "hash": "641b153281be14dc17ecf9062f31a89a7caf132a47fc5147888dc5c2427721de",
     "summary": "List Subaccounts",
     "tag": "Subaccount",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "POST /subaccount": {
     "path": "/subaccount",
@@ -189,7 +189,7 @@
     "hash": "987e8885c728b3fbe45f4603fd5a0c74e0e8738c07a4b19816c5c430ca512ada",
     "summary": "Create Subaccount",
     "tag": "Subaccount",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "GET /subaccount/{code}": {
     "path": "/subaccount/{code}",
@@ -197,7 +197,7 @@
     "hash": "8a2486124003f57abcf1b77ccb6e0621770484ee31b598e72ae4e6d80dd9167e",
     "summary": "Fetch Subaccount",
     "tag": "Subaccount",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "PUT /subaccount/{code}": {
     "path": "/subaccount/{code}",
@@ -205,7 +205,7 @@
     "hash": "d02ff732ed4f1896b65d07d035ab089d60e800547b3f70fe4c752b5e15e0d548",
     "summary": "Update Subaccount",
     "tag": "Subaccount",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "GET /split": {
     "path": "/split",
@@ -213,7 +213,7 @@
     "hash": "2ace61de53d2b6fae39786cc70a31ab2a4013da4ecb8c9ac357dabb09458a466",
     "summary": "List Splits",
     "tag": "Split",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "POST /split": {
     "path": "/split",
@@ -221,7 +221,7 @@
     "hash": "3b4149147a925353d4d6d93226c4c01bb59e52161002ddda9868962a83aa14f3",
     "summary": "Create Split",
     "tag": "Split",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "GET /split/{id}": {
     "path": "/split/{id}",
@@ -229,7 +229,7 @@
     "hash": "cf6f538e210c1b48d30c30569deaf8a5db85440dc82b9730cecd35c63fb57af9",
     "summary": "Fetch Split",
     "tag": "Split",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "PUT /split/{id}": {
     "path": "/split/{id}",
@@ -237,7 +237,7 @@
     "hash": "ce9d398086f835a9d78e97fd702d10e8022f0088e84d93bfd629266386429a0c",
     "summary": "Update Split",
     "tag": "Split",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "POST /split/{id}/subaccount/add": {
     "path": "/split/{id}/subaccount/add",
@@ -245,7 +245,7 @@
     "hash": "4c559ae724b5e38f3160b1ba513eef44920bf30564c053a1a1174c592bf79e63",
     "summary": "Add Subaccount to Split",
     "tag": "Split",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "POST /split/{id}/subaccount/remove": {
     "path": "/split/{id}/subaccount/remove",
@@ -253,7 +253,7 @@
     "hash": "91a192ef9b9fdd7104bebf36cc53c03cfcfb11cc5ba336cb39a1fde22fa75c93",
     "summary": "Remove Subaccount from split",
     "tag": "Split",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.615Z"
   },
   "POST /terminal/{id}/event": {
     "path": "/terminal/{id}/event",
@@ -261,7 +261,7 @@
     "hash": "4c1579ca38d460b069180f51ae370fbac1d80a7770a570a6010af0d247f8585f",
     "summary": "Send Event",
     "tag": "Terminal",
-    "updatedAt": "2026-08-23T23:25:29.437Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "GET /terminal/{terminal_id}/event/{event_id}": {
     "path": "/terminal/{terminal_id}/event/{event_id}",
@@ -269,7 +269,7 @@
     "hash": "fea9c50b28e6095d69e146c7ce7b7aeab045237c87dd3b34ba6d15383796c8b9",
     "summary": "Fetch Event Status",
     "tag": "Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "GET /terminal/{terminal_id}/presence": {
     "path": "/terminal/{terminal_id}/presence",
@@ -277,7 +277,7 @@
     "hash": "d033e6c36f1feec0b75eb637fe6cc4c4460ba23a8172f63c1189f5b2214bb496",
     "summary": "Fetch Terminal Status",
     "tag": "Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "GET /terminal": {
     "path": "/terminal",
@@ -285,7 +285,7 @@
     "hash": "be59cf0bbc2bfbfc5da47208b99bf5063185cc73c5f14237878d1f354cb4302d",
     "summary": "List Terminals",
     "tag": "Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "GET /terminal/{terminal_id}": {
     "path": "/terminal/{terminal_id}",
@@ -293,7 +293,7 @@
     "hash": "432fdd4cc983f235cf3e454f547440ac3900e9804bf3e039470ac0e1a4954fd1",
     "summary": "Fetch Terminal",
     "tag": "Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "PUT /terminal/{terminal_id}": {
     "path": "/terminal/{terminal_id}",
@@ -301,7 +301,7 @@
     "hash": "4b1b165ac9799573f6aa04c2f532731d69713f889a0c3f191eae0245403c8aeb",
     "summary": "Update Terminal",
     "tag": "Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "POST /terminal/commission_device": {
     "path": "/terminal/commission_device",
@@ -309,7 +309,7 @@
     "hash": "1ebba68519cbead2b5175b9ca91eab897ea9689c719b884975668781b89e3f56",
     "summary": "Commission Terminal",
     "tag": "Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "POST /terminal/decommission_device": {
     "path": "/terminal/decommission_device",
@@ -317,7 +317,7 @@
     "hash": "bea98c51f65e8dc937edac9163fafaafe70e6b585608da7247f151d93f9fddb4",
     "summary": "Decommission Terminal",
     "tag": "Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "GET /virtual_terminal": {
     "path": "/virtual_terminal",
@@ -325,7 +325,7 @@
     "hash": "c4bd6fdd01c9481a29bfd7021bc3375ae7520f7a45b70ebd82705986d5a3900c",
     "summary": "List Virtual Terminals",
     "tag": "Virtual Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "POST /virtual_terminal": {
     "path": "/virtual_terminal",
@@ -333,7 +333,7 @@
     "hash": "7360036d6a3283d68da5ad5fe3efeacad8c44d7e29932cea36b547fd8b4b35c3",
     "summary": "Create Virtual Terminal",
     "tag": "Virtual Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "GET /virtual_terminal/{code}": {
     "path": "/virtual_terminal/{code}",
@@ -341,7 +341,7 @@
     "hash": "9873eab60fe44e6bba7e71f8fd5bae7644540f0c61d67aab87b118d07b2b8279",
     "summary": "Fetch Virtual Terminal",
     "tag": "Virtual Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "PUT /virtual_terminal/{code}": {
     "path": "/virtual_terminal/{code}",
@@ -349,7 +349,7 @@
     "hash": "068519c6e84ef613167c8c41be703f605339b74f67190f4670e82c7e15155034",
     "summary": "Update Virtual Terminal",
     "tag": "Virtual Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "PUT /virtual_terminal/{code}/deactivate": {
     "path": "/virtual_terminal/{code}/deactivate",
@@ -357,7 +357,7 @@
     "hash": "c39c424e56236feb3b3707221ce5c3bae18aec6c448a55191dfdb3f2dd11cbbf",
     "summary": "Deactivate Virtual Terminal",
     "tag": "Virtual Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "POST /virtual_terminal/{code}/destination/assign": {
     "path": "/virtual_terminal/{code}/destination/assign",
@@ -365,7 +365,7 @@
     "hash": "f1cdebd8d4ea3a1e6d031e077f01f78d8220638015b901d0bc0f4a450ff5db52",
     "summary": "Assign Destination to Virtual Terminal",
     "tag": "Virtual Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "POST /virtual_terminal/{code}/destination/unassign": {
     "path": "/virtual_terminal/{code}/destination/unassign",
@@ -373,7 +373,7 @@
     "hash": "d999392ab6a808a0e68aea4902180ef275b48545a6cba8962f86ef492caa4b67",
     "summary": "Unassign Destination from Virtual Terminal",
     "tag": "Virtual Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "PUT /virtual_terminal/{code}/split_code": {
     "path": "/virtual_terminal/{code}/split_code",
@@ -381,7 +381,7 @@
     "hash": "b196e3574a82ea68c00f7fa449f2dc4dec37c18ea394f66537890ad68c7aeeb6",
     "summary": "Add Split Code to Virtual Terminal",
     "tag": "Virtual Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "DELETE /virtual_terminal/{code}/split_code": {
     "path": "/virtual_terminal/{code}/split_code",
@@ -389,7 +389,7 @@
     "hash": "a1843d2c719e6cc742d988a341381fef4422d635aeb4ae2f1816ce42e2ef0b7f",
     "summary": "Remove Split Code from Virtual Terminal",
     "tag": "Virtual Terminal",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "GET /customer": {
     "path": "/customer",
@@ -397,7 +397,7 @@
     "hash": "998b4aaa5898c0d28cf29729d43bb3d9046996ad1894da3d45fe84d41295a499",
     "summary": "List Customers",
     "tag": "Customer",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "POST /customer": {
     "path": "/customer",
@@ -405,7 +405,7 @@
     "hash": "70893678b403b8188f6abd049288c23920fb53abdf92de8b384993df04676ba2",
     "summary": "Create Customer",
     "tag": "Customer",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "GET /customer/{code}": {
     "path": "/customer/{code}",
@@ -413,7 +413,7 @@
     "hash": "f2ac6c9ddd410f0beb40018de520e9d8b6de1a9ef63fdb8dc404a663aaaae685",
     "summary": "Fetch Customer",
     "tag": "Customer",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "PUT /customer/{code}": {
     "path": "/customer/{code}",
@@ -421,7 +421,7 @@
     "hash": "69db2b6c07face8459d100bfa8f7ee5730e31005795a7fc0da5e9996785ef35c",
     "summary": "Update Customer",
     "tag": "Customer",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "POST /customer/set_risk_action": {
     "path": "/customer/set_risk_action",
@@ -429,7 +429,7 @@
     "hash": "b22fb4c980cfe0fe8319debcacb5f8b96ad1f95375efb9a79dd613c65ffda23f",
     "summary": "Set Risk Action",
     "tag": "Customer",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "POST /customer/{code}/identification": {
     "path": "/customer/{code}/identification",
@@ -437,7 +437,7 @@
     "hash": "85a19783c733e2c011fafa9d539ecd7a7aac51b915a3d97c6864cb37b2a82a81",
     "summary": "Validate Customer",
     "tag": "Customer",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "POST /customer/authorization/initialize": {
     "path": "/customer/authorization/initialize",
@@ -445,7 +445,7 @@
     "hash": "663219e07fa88d9b9ed26c880e3b8849fe68b969eefbce715d87acf9c2898491",
     "summary": "Initialize Authorization",
     "tag": "Customer",
-    "updatedAt": "2026-08-23T23:25:29.438Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "GET /customer/authorization/verify/{reference}": {
     "path": "/customer/authorization/verify/{reference}",
@@ -453,7 +453,7 @@
     "hash": "30f4ff25dbe27692a97bfdbe45cd7fce35bb52773e6f0256b49b709b82fa61bc",
     "summary": "Verify Authorization",
     "tag": "Customer",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "POST /customer/authorization/deactivate": {
     "path": "/customer/authorization/deactivate",
@@ -461,7 +461,7 @@
     "hash": "dab11400d25364a5d77ff39b895b368051d189bee3539cf86129f9cf64e61536",
     "summary": "Deactivate Authorization",
     "tag": "Customer",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "POST /customer/{id}/initialize-direct-debit": {
     "path": "/customer/{id}/initialize-direct-debit",
@@ -469,7 +469,7 @@
     "hash": "0250457802af972d619fc82b4980067b3ae856ade1b45e65132e5990ccbd12e8",
     "summary": "Initialize Direct Debit",
     "tag": "Customer",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "PUT /customer/{id}/directdebit-activation-charge": {
     "path": "/customer/{id}/directdebit-activation-charge",
@@ -477,7 +477,7 @@
     "hash": "5d440148dc600cff67b3405593bfb46d18f6b88c88b13ac3b0c5737718483763",
     "summary": "Direct Debit Activation Charge",
     "tag": "Customer",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "GET /customer/{id}/directdebit-mandate-authorizations": {
     "path": "/customer/{id}/directdebit-mandate-authorizations",
@@ -485,7 +485,7 @@
     "hash": "889836f39679de64a2c3e844e2de3a57aa70e41dc48c724081ee512df5412721",
     "summary": "Fetch Mandate Authorizations",
     "tag": "Customer",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "PUT /directdebit/activation-charge": {
     "path": "/directdebit/activation-charge",
@@ -493,7 +493,7 @@
     "hash": "52753f1dee7c6c12790d70b42feb387adf7ff4c033e761bdc07e364920646231",
     "summary": "Trigger Activation Charge",
     "tag": "Direct Debit",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "GET /directdebit/mandate-authorizations": {
     "path": "/directdebit/mandate-authorizations",
@@ -501,7 +501,7 @@
     "hash": "2543a2df78ee456a30821c502d8893e55dc23c73577b909bd24b574606eb7e88",
     "summary": "List Mandate Authorizations",
     "tag": "Direct Debit",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "GET /dedicated_account": {
     "path": "/dedicated_account",
@@ -509,7 +509,7 @@
     "hash": "0a66b43104bbbaada4043e7b0ca886e4c40b404efd2369d16a04c04dd214df39",
     "summary": "List Dedicated Accounts",
     "tag": "Dedicated Virtual Account",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "POST /dedicated_account": {
     "path": "/dedicated_account",
@@ -517,7 +517,7 @@
     "hash": "bbaeed892fd88fb830f20f612686ececf529dcc7748a556293f74d57b012ea10",
     "summary": "Create Dedicated Account",
     "tag": "Dedicated Virtual Account",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "POST /dedicated_account/assign": {
     "path": "/dedicated_account/assign",
@@ -525,7 +525,7 @@
     "hash": "a1ce4e935a64a786463e341d063bcda42f73bc262bb4190180b0c5a77e5ff8da",
     "summary": "Assign Dedicated Account",
     "tag": "Dedicated Virtual Account",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "GET /dedicated_account/{id}": {
     "path": "/dedicated_account/{id}",
@@ -533,7 +533,7 @@
     "hash": "ef7b032162ccaa5c454366438912f27cb69089b2e07e7630cec4b43a4d64db4f",
     "summary": "Fetch Dedicated Account",
     "tag": "Dedicated Virtual Account",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.616Z"
   },
   "DELETE /dedicated_account/{id}": {
     "path": "/dedicated_account/{id}",
@@ -541,7 +541,7 @@
     "hash": "dfac8574e0a0eac43a79ce525beddc3dd0af1f04e887ce725997319285fe938d",
     "summary": "Deactivate Dedicated Account",
     "tag": "Dedicated Virtual Account",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "GET /dedicated_account/requery": {
     "path": "/dedicated_account/requery",
@@ -549,7 +549,7 @@
     "hash": "a62abec9111164e7631641bcb0dc61b0b647e7718f654c819f180f64f9712dce",
     "summary": "Requery Dedicated Account",
     "tag": "Dedicated Virtual Account",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "POST /dedicated_account/split": {
     "path": "/dedicated_account/split",
@@ -557,7 +557,7 @@
     "hash": "22ffcb08bd77783eb5c870c860fc722227192891613eb6070c67c5aaa3eb68f5",
     "summary": "Split Dedicated Account Transaction",
     "tag": "Dedicated Virtual Account",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "DELETE /dedicated_account/split": {
     "path": "/dedicated_account/split",
@@ -565,7 +565,7 @@
     "hash": "241bc473cf046e0a0ad087037e931ee20ae0d49418e01f5b87b9b7f93b2505a4",
     "summary": "Remove Split from Dedicated Account",
     "tag": "Dedicated Virtual Account",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "GET /dedicated_account/available_providers": {
     "path": "/dedicated_account/available_providers",
@@ -573,7 +573,7 @@
     "hash": "4a70539b1aa15a574c808d537d995c64ccefeaf7486f766ca6f094d23498542f",
     "summary": "Fetch Bank Providers",
     "tag": "Dedicated Virtual Account",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "GET /apple-pay/domain": {
     "path": "/apple-pay/domain",
@@ -581,7 +581,7 @@
     "hash": "8da4594603a97a10b4e515834add9e2ff3a39a65dd30a79aa22ac6e4cb1ef37d",
     "summary": "List Domains",
     "tag": "Apple Pay",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "POST /apple-pay/domain": {
     "path": "/apple-pay/domain",
@@ -589,7 +589,7 @@
     "hash": "5689a01d9ae7b37c98f7b0acb577794ff4e0162144eb875557f10b72b7cb8b18",
     "summary": "Register Domain",
     "tag": "Apple Pay",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "DELETE /apple-pay/domain": {
     "path": "/apple-pay/domain",
@@ -597,7 +597,7 @@
     "hash": "fbe56066d0a19c1ed66369c2cda5f5b790032d8ef09a05fdea3abaf07b928058",
     "summary": "Unregister Domain",
     "tag": "Apple Pay",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "GET /plan": {
     "path": "/plan",
@@ -605,7 +605,7 @@
     "hash": "ac6592285b1feb64c19131bdda811b697022c0e67ae69af28a2deb8b6722d257",
     "summary": "List Plans",
     "tag": "Plan",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "POST /plan": {
     "path": "/plan",
@@ -613,7 +613,7 @@
     "hash": "9d40baca8acd245e400dfe4c0deb5cd0db224e7e1d956309cf0f6696a0a7a577",
     "summary": "Create Plan",
     "tag": "Plan",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "GET /plan/{code}": {
     "path": "/plan/{code}",
@@ -621,7 +621,7 @@
     "hash": "b24eae84c5fcaea67991bfd52c6371d0a51e806b88107cff79fbbd67485040b9",
     "summary": "Fetch Plan",
     "tag": "Plan",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "PUT /plan/{code}": {
     "path": "/plan/{code}",
@@ -629,7 +629,7 @@
     "hash": "ba4b505f273330c6829f84a54f33614eb3a8f8c036ebe1c67ef6e8a9c9f172e7",
     "summary": "Update Plan",
     "tag": "Plan",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "GET /subscription": {
     "path": "/subscription",
@@ -637,7 +637,7 @@
     "hash": "33327e67eab0ca98d9fe6a88c06f0e58ebe1ef33184129e2c8782332cfdccd6a",
     "summary": "List Subscriptions",
     "tag": "Subscription",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "POST /subscription": {
     "path": "/subscription",
@@ -645,7 +645,7 @@
     "hash": "8a988458bca4632199756da6a1d77229724c48498e46c2bdca72053ae79241f1",
     "summary": "Create Subscription",
     "tag": "Subscription",
-    "updatedAt": "2026-08-23T23:25:29.439Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "GET /subscription/{code}": {
     "path": "/subscription/{code}",
@@ -653,7 +653,7 @@
     "hash": "d4eddced31102196515a4a880d554d7ec54bd3b5eda4c22a20a498536a5136ef",
     "summary": "Fetch Subscription",
     "tag": "Subscription",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "POST /subscription/disable": {
     "path": "/subscription/disable",
@@ -661,7 +661,7 @@
     "hash": "e70a7956e52ac69fdb634bdbff5b3304df33d5b3560bb6b2951a8f05edb53fa5",
     "summary": "Disable Subscription",
     "tag": "Subscription",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "POST /subscription/enable": {
     "path": "/subscription/enable",
@@ -669,7 +669,7 @@
     "hash": "1dbf3bfaf361058d9a4be09fc5efaf2876fa0c303f06cea2bcb05e4db0875281",
     "summary": "Enable Subscription",
     "tag": "Subscription",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "GET /subscription/{code}/manage/link": {
     "path": "/subscription/{code}/manage/link",
@@ -677,7 +677,7 @@
     "hash": "81589f1957497e7fd67bfac5720bdb150710586e708b6d5700567ad48dfdc549",
     "summary": "Generate Update Subscription Link",
     "tag": "Subscription",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "POST /subscription/{code}/manage/email": {
     "path": "/subscription/{code}/manage/email",
@@ -685,7 +685,7 @@
     "hash": "d337155bc371d2d19ab86f46ef47510a52a13069d21c12d998aee7424b32ae24",
     "summary": "Send Update Subscription Link",
     "tag": "Subscription",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "GET /transferrecipient": {
     "path": "/transferrecipient",
@@ -693,7 +693,7 @@
     "hash": "0f6ef2c004aa3fd3272ea40fa2a314c5cdad679be2e0e3c8d1687eda9685fc05",
     "summary": "List Transfer Recipients",
     "tag": "Transfer Recipient",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "POST /transferrecipient": {
     "path": "/transferrecipient",
@@ -701,7 +701,7 @@
     "hash": "2b50e614d3491f70da83f29939152435fee37f1a127f8e5f0d4f6dd96c7e112a",
     "summary": "Create Transfer Recipient",
     "tag": "Transfer Recipient",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "POST /transferrecipient/bulk": {
     "path": "/transferrecipient/bulk",
@@ -709,7 +709,7 @@
     "hash": "21ed8fa0d07b6333b9a390e844956069de7dff79dcdb2d1237d18a7336d185d0",
     "summary": "Bulk Create Transfer Recipient",
     "tag": "Transfer Recipient",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "GET /transferrecipient/{code}": {
     "path": "/transferrecipient/{code}",
@@ -717,7 +717,7 @@
     "hash": "0b195f5d6fb6b88c80517f9068c0665561c8229c3c9d3332b561c575f2183755",
     "summary": "Fetch Transfer recipient",
     "tag": "Transfer Recipient",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "PUT /transferrecipient/{code}": {
     "path": "/transferrecipient/{code}",
@@ -725,7 +725,7 @@
     "hash": "2ab345cb8c10f522fd59c204638194769d5d3300bb21be84780265ee94c3d794",
     "summary": "Update Transfer Recipient",
     "tag": "Transfer Recipient",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "DELETE /transferrecipient/{code}": {
     "path": "/transferrecipient/{code}",
@@ -733,7 +733,7 @@
     "hash": "c7b335fdc5e0419970ec573b5a4d610dde844b24489c236f22be3fae305ce797",
     "summary": "Delete Transfer Recipient",
     "tag": "Transfer Recipient",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "GET /transfer": {
     "path": "/transfer",
@@ -741,7 +741,7 @@
     "hash": "9d0d23128bb1c741e4e72eae9276b225ed88f0e957fe5c4959325f0d3fada5d4",
     "summary": "List Transfers",
     "tag": "Transfer",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "POST /transfer": {
     "path": "/transfer",
@@ -749,7 +749,7 @@
     "hash": "1c2445d282b13a2de234a21605ed9808dea9dca7de87cf4e24a88d4669a6631a",
     "summary": "Initiate Transfer",
     "tag": "Transfer",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "POST /transfer/finalize_transfer": {
     "path": "/transfer/finalize_transfer",
@@ -757,7 +757,7 @@
     "hash": "7fd625abc09ed605f4754bc9c3bcaa6f4a9d6b3d379c6a1cdd7f8305d08cec38",
     "summary": "Finalize Transfer",
     "tag": "Transfer",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "POST /transfer/bulk": {
     "path": "/transfer/bulk",
@@ -765,7 +765,7 @@
     "hash": "02a4422b448ff9d46a4f48e50a8f6900b75ea2b946898a86e9b79970c4c517d6",
     "summary": "Initiate Bulk Transfer",
     "tag": "Transfer",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "GET /transfer/{code}": {
     "path": "/transfer/{code}",
@@ -773,7 +773,7 @@
     "hash": "ba83afb73a527468870fc84715677d1e5444a7722c8ac3d86eda8d7318c30493",
     "summary": "Fetch Transfer",
     "tag": "Transfer",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "GET /transfer/verify/{reference}": {
     "path": "/transfer/verify/{reference}",
@@ -781,7 +781,7 @@
     "hash": "6bfac80c2fd9c389af5be5903e5086fdcf29d20e1fdc14ec8005f8deeceaca78",
     "summary": "Verify Transfer",
     "tag": "Transfer",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "GET /transfer/export": {
     "path": "/transfer/export",
@@ -789,7 +789,7 @@
     "hash": "3edadc02e17affeed4f2d458e71cc6413eeb493d4e12fa32b445a458443be61c",
     "summary": "Export Transfers",
     "tag": "Transfer",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "POST /transfer/resend_otp": {
     "path": "/transfer/resend_otp",
@@ -797,7 +797,7 @@
     "hash": "037cc550b418c4b6de058e21fabc6c1ac7a2d91511a5f05a00a66a481c1d687b",
     "summary": "Resend OTP for Transfer",
     "tag": "Transfer",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "POST /transfer/disable_otp": {
     "path": "/transfer/disable_otp",
@@ -805,7 +805,7 @@
     "hash": "243af53d3571d667654a4ff820c9fa040233d0e9e5aa6c3eceb17120892ffa1e",
     "summary": "Disable OTP for Transfers",
     "tag": "Transfer",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.619Z"
   },
   "POST /transfer/disable_otp_finalize": {
     "path": "/transfer/disable_otp_finalize",
@@ -813,7 +813,7 @@
     "hash": "975d8863b7c1a99a1bdf4693b9802593603bd3e906886a947165f667101e70c6",
     "summary": "Finalize Disabling OTP for Transfers",
     "tag": "Transfer",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "POST /transfer/enable_otp": {
     "path": "/transfer/enable_otp",
@@ -821,7 +821,7 @@
     "hash": "30749324d43d37f620f529156c784ab809d3ea01a3e6998f5d0da7980f3907bd",
     "summary": "Enable OTP requirement for Transfers",
     "tag": "Transfer",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /balance": {
     "path": "/balance",
@@ -829,7 +829,7 @@
     "hash": "0e461d0408df52bc013ea93a412e05955731fd6d79eadf55a267ae8471475e08",
     "summary": "Fetch Balance",
     "tag": "Balance",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /balance/ledger": {
     "path": "/balance/ledger",
@@ -837,7 +837,7 @@
     "hash": "b2427d922c4880cccb489e50bb111efa747b67a77557b20900610fc3e346b5f9",
     "summary": "Balance Ledger",
     "tag": "Balance",
-    "updatedAt": "2026-08-23T23:25:29.440Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /paymentrequest": {
     "path": "/paymentrequest",
@@ -845,7 +845,7 @@
     "hash": "7eb42991f49fba9b593d62aa158c1cc30f1866c927aa9dfe5d967e30c680146b",
     "summary": "List Payment Request",
     "tag": "Payment Request",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "POST /paymentrequest": {
     "path": "/paymentrequest",
@@ -853,7 +853,7 @@
     "hash": "25d4e5cc9417360ababb3b979d7ee5f74d3d642e15c570c42ee0b074a0a7c263",
     "summary": "Create Payment Request",
     "tag": "Payment Request",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /paymentrequest/{id}": {
     "path": "/paymentrequest/{id}",
@@ -861,7 +861,7 @@
     "hash": "4bb06a9212da288e0b771896e3c09ee6c0507b7427919a1200a06a07bbafba97",
     "summary": "Fetch Payment Request",
     "tag": "Payment Request",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "PUT /paymentrequest/{id}": {
     "path": "/paymentrequest/{id}",
@@ -869,7 +869,7 @@
     "hash": "dcad233735238d35f1310abe1a078790de49e0d5b7b8fe06e4c7068cd570612a",
     "summary": "Update Payment Request",
     "tag": "Payment Request",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /paymentrequest/verify/{id}": {
     "path": "/paymentrequest/verify/{id}",
@@ -877,7 +877,7 @@
     "hash": "f857360fe7cecc84d669ace04020fe90a7906d027df6d4399bc37caef0979148",
     "summary": "Verify Payment Request",
     "tag": "Payment Request",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "POST /paymentrequest/notify/{id}": {
     "path": "/paymentrequest/notify/{id}",
@@ -885,7 +885,7 @@
     "hash": "14de22afcd02b877dbd240382519b4e3f642031828b181be104d3adc15c8f1b9",
     "summary": "Send Notification",
     "tag": "Payment Request",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /paymentrequest/totals": {
     "path": "/paymentrequest/totals",
@@ -893,7 +893,7 @@
     "hash": "1ebb6fe1dc731f93aca735e4d605685f1e30c916bc7a7925a3027f8001827733",
     "summary": "Payment Request Total",
     "tag": "Payment Request",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "POST /paymentrequest/finalize/{id}": {
     "path": "/paymentrequest/finalize/{id}",
@@ -901,7 +901,7 @@
     "hash": "b536dc857e251f83e71380a5920366bf7b7ef3c8c4303c644d5c7772984089be",
     "summary": "Finalize Payment Request",
     "tag": "Payment Request",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "POST /paymentrequest/archive/{id}": {
     "path": "/paymentrequest/archive/{id}",
@@ -909,7 +909,7 @@
     "hash": "1e75ffb28ef45a380ae3aaa991a5560a576d62ba49f50a4de02e9c03a88f98ef",
     "summary": "Archive Payment Request",
     "tag": "Payment Request",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /product": {
     "path": "/product",
@@ -917,7 +917,7 @@
     "hash": "98a86a0aac68c9c0630978970bff6e715b70418c018ba5f0e2975b4bb815e6e6",
     "summary": "List Products",
     "tag": "Product",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "POST /product": {
     "path": "/product",
@@ -925,7 +925,7 @@
     "hash": "5bf2dac90044009970b735bafd92e8fbe6d97b94ba14707b0667a57746c81161",
     "summary": "Create Product",
     "tag": "Product",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /product/{id}": {
     "path": "/product/{id}",
@@ -933,7 +933,7 @@
     "hash": "190d96d46dbde560b2648544504a0e18c60463ea8c2f293da1d77afedb2310e8",
     "summary": "Fetch Product",
     "tag": "Product",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "PUT /product/{id}": {
     "path": "/product/{id}",
@@ -941,7 +941,7 @@
     "hash": "34c65557a9704058a2c9c724e3e561510f73cf2853fb492b950645451d56cb2a",
     "summary": "Update product",
     "tag": "Product",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "DELETE /product/{id}": {
     "path": "/product/{id}",
@@ -949,7 +949,7 @@
     "hash": "99f1243e23c5808663624fee2487d08978901992b0698645c7797ef42a6b4e52",
     "summary": "Delete Product",
     "tag": "Product",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /storefront": {
     "path": "/storefront",
@@ -957,7 +957,7 @@
     "hash": "54a465b3c469f5f98810fe5de85ec5f3e1d743f3825b7ba00d892e6dba63cedc",
     "summary": "List Storefronts",
     "tag": "Storefront",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "POST /storefront": {
     "path": "/storefront",
@@ -965,7 +965,7 @@
     "hash": "320bf43a3f2acd38909a1df225adedcb533eb34dd4a38cc129ba2430cf7ac4b1",
     "summary": "Create Storefront",
     "tag": "Storefront",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /storefront/{id}": {
     "path": "/storefront/{id}",
@@ -973,7 +973,7 @@
     "hash": "1b40bbceb1af6344e222ecb9616dfd823d64825f55424d32f41b030dc025b47b",
     "summary": "Fetch Storefront",
     "tag": "Storefront",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "PUT /storefront/{id}": {
     "path": "/storefront/{id}",
@@ -981,7 +981,7 @@
     "hash": "33c22359810bd9e3781b72afcfb35e2217e85b52541761c72fd600c2e4b4e837",
     "summary": "Update Storefront",
     "tag": "Storefront",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "DELETE /storefront/{id}": {
     "path": "/storefront/{id}",
@@ -989,7 +989,7 @@
     "hash": "78e44968e0e9b0a74c4b450d61ab7c403a0e00add62c4ff5e685493b7ab18bee",
     "summary": "Delete Storefront",
     "tag": "Storefront",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /storefront/verify/{slug}": {
     "path": "/storefront/verify/{slug}",
@@ -997,7 +997,7 @@
     "hash": "487213f9a91698982a85689eee1f7ef51fd75ed0be36e319a74e78c067e8e181",
     "summary": "Verify Storefront Slug",
     "tag": "Storefront",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /storefront/{id}/order": {
     "path": "/storefront/{id}/order",
@@ -1005,7 +1005,7 @@
     "hash": "fb748cfd57208727d87de66511027fc9a01c71b81a752c126b2e16a8b61d7b98",
     "summary": "Fetch Storefront Orders",
     "tag": "Storefront",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /storefront/{id}/product": {
     "path": "/storefront/{id}/product",
@@ -1013,7 +1013,7 @@
     "hash": "af467e593ca4853bc75132339bf2ed3f60e1a1b4cf736fff5717f2ca7a64f143",
     "summary": "List Storefront Products",
     "tag": "Storefront",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "POST /storefront/{id}/product": {
     "path": "/storefront/{id}/product",
@@ -1021,7 +1021,7 @@
     "hash": "ff9e7603b590a3d2c5075ae85c7c5179b3ebf3641a8816df661fd71394203635",
     "summary": "Add Products to Storefront",
     "tag": "Storefront",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "POST /storefront/{id}/publish": {
     "path": "/storefront/{id}/publish",
@@ -1029,7 +1029,7 @@
     "hash": "863683f500fc7b88ef9f6aed641c6fa8f15ca0a006b07aebccdfaee373cb88d7",
     "summary": "Publish Storefront",
     "tag": "Storefront",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "POST /storefront/{id}/duplicate": {
     "path": "/storefront/{id}/duplicate",
@@ -1037,7 +1037,7 @@
     "hash": "f1bde62d70e743b3b1ea1f25035470330579d1f9edbf0924b9de3c35a92804cd",
     "summary": "Duplicate Storefront",
     "tag": "Storefront",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /order": {
     "path": "/order",
@@ -1045,7 +1045,7 @@
     "hash": "b077de23a7153b22ee1fe330d41a37509713d780ffe41025ea7030f723da1ff3",
     "summary": "List Orders",
     "tag": "Order",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "POST /order": {
     "path": "/order",
@@ -1053,7 +1053,7 @@
     "hash": "0fffac531fe5cc023002c2cdd4605d3e8f61759e2dfaebe17de3b735854ebd30",
     "summary": "Create Order",
     "tag": "Order",
-    "updatedAt": "2026-08-23T23:25:29.441Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /order/{id}": {
     "path": "/order/{id}",
@@ -1061,7 +1061,7 @@
     "hash": "5c7c8bb408a28b0036cb91297e53af25af969a8614e04b9475dd19bc6248b23b",
     "summary": "Fetch Order",
     "tag": "Order",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /order/product/{id}": {
     "path": "/order/product/{id}",
@@ -1069,7 +1069,7 @@
     "hash": "58804164acdf9ea3d3631706b3420752826c2acf6dcb9fb47ff2d4d43fdfac99",
     "summary": "Fetch Product Orders",
     "tag": "Order",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /order/{code}/validate": {
     "path": "/order/{code}/validate",
@@ -1077,7 +1077,7 @@
     "hash": "10f8f69199192b30ad8bdab097913624662de6b7a8063a1c3579262cd8146a86",
     "summary": "Validate Order",
     "tag": "Order",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /page": {
     "path": "/page",
@@ -1085,7 +1085,7 @@
     "hash": "b8d547db07e6dc0f81fc79764c6952be5612a38d9a3c7cfb6e11cb03698574e3",
     "summary": "List Pages",
     "tag": "Page",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "POST /page": {
     "path": "/page",
@@ -1093,7 +1093,7 @@
     "hash": "3b6d63acad053d1055abcaa34b72397be29a922f3e2d76b32a72a2c4bb127c0b",
     "summary": "Create Page",
     "tag": "Page",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /page/{id}": {
     "path": "/page/{id}",
@@ -1101,7 +1101,7 @@
     "hash": "43fc529aa79bd629513f7608d7475ace46fefb888302921eab02848ce05514ee",
     "summary": "Fetch Page",
     "tag": "Page",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "PUT /page/{id}": {
     "path": "/page/{id}",
@@ -1109,7 +1109,7 @@
     "hash": "20579da86b183afdcd143af6854af003336d7f54ec58bf1553ae1c787d457e3b",
     "summary": "Update Page",
     "tag": "Page",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.620Z"
   },
   "GET /page/check_slug_availability/{slug}": {
     "path": "/page/check_slug_availability/{slug}",
@@ -1117,7 +1117,7 @@
     "hash": "48d0ddd86c8680ac4008e25e02bd24f54a65cfee6870bdbefc2979fb721221f3",
     "summary": "Check Slug Availability",
     "tag": "Page",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "POST /page/{id}/product": {
     "path": "/page/{id}/product",
@@ -1125,7 +1125,7 @@
     "hash": "03a9e326b66a78a64448afe9677244eab54ab4a9164e32ff2b92b51c4735148d",
     "summary": "Add Products",
     "tag": "Page",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "GET /settlement": {
     "path": "/settlement",
@@ -1133,7 +1133,7 @@
     "hash": "b8a15877cfa635bbdf43439d877349279bf5bf0947005685b1ab9bb147f67b42",
     "summary": "List Settlements",
     "tag": "Settlement",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "GET /settlement/{id}/transactions": {
     "path": "/settlement/{id}/transactions",
@@ -1141,7 +1141,7 @@
     "hash": "b1754afb29b3ba69948b641478ea40e0c07be360c25d8b96217a14d033ea9e39",
     "summary": "Fetch Settlement Transactions",
     "tag": "Settlement",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "GET /integration/payment_session_timeout": {
     "path": "/integration/payment_session_timeout",
@@ -1149,7 +1149,7 @@
     "hash": "0e3a93fc8ea9d752a60d92de263a9026cc7a0776e3c1bcb1e876af6710e88de0",
     "summary": "Fetch Payment Session Timeout",
     "tag": "Integration",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "PUT /integration/payment_session_timeout": {
     "path": "/integration/payment_session_timeout",
@@ -1157,7 +1157,7 @@
     "hash": "071767b90d33bf5f45cd04f5c02bc0810baea3a58722a164883a11ee607172db",
     "summary": "Update Payment Session Timeout",
     "tag": "Integration",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "GET /refund": {
     "path": "/refund",
@@ -1165,7 +1165,7 @@
     "hash": "0ac17a0dc716500f4d875f1b30900a3e6de782b6977f26c6168fe2daebbd89df",
     "summary": "List Refunds",
     "tag": "Refund",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "POST /refund": {
     "path": "/refund",
@@ -1173,7 +1173,7 @@
     "hash": "0920ceedef7fd8bc9888577516809bd2e298bcaf16421404c14a48cd743b1fef",
     "summary": "Create Refund",
     "tag": "Refund",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "POST /refund/retry_with_customer_details/{id}": {
     "path": "/refund/retry_with_customer_details/{id}",
@@ -1181,7 +1181,7 @@
     "hash": "ae772886aa6eda50cef9f3c51cf146b15bfc98e88cc455329e55aa70f137704c",
     "summary": "Retry Refund",
     "tag": "Refund",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "GET /refund/{id}": {
     "path": "/refund/{id}",
@@ -1189,7 +1189,7 @@
     "hash": "daa847f47222212c733b90fcd8d81f6d80d3803b83c344f2e926827074531378",
     "summary": "Fetch Refund",
     "tag": "Refund",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "GET /dispute": {
     "path": "/dispute",
@@ -1197,7 +1197,7 @@
     "hash": "40395fbed024c0e0ff88add09127452a83bf97bede16fc223186c473c3a59b66",
     "summary": "List Disputes",
     "tag": "Dispute",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "GET /dispute/{id}": {
     "path": "/dispute/{id}",
@@ -1205,7 +1205,7 @@
     "hash": "6522cc5919ebdff3d4ce1b7a5126978bbd6cc9ade9de6feb9b2b4c4327a7ce6c",
     "summary": "Fetch Dispute",
     "tag": "Dispute",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "PUT /dispute/{id}": {
     "path": "/dispute/{id}",
@@ -1213,7 +1213,7 @@
     "hash": "fa452ffbbdbfcb5c1413bdf4ff67542045abb3e70058a5c686b24e579b345ae9",
     "summary": "Update Dispute",
     "tag": "Dispute",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "GET /dispute/{id}/upload_url": {
     "path": "/dispute/{id}/upload_url",
@@ -1221,7 +1221,7 @@
     "hash": "73f4e44054e1eacc063668412c857d3a0ea77fdbddca0455641eaa8eadc0e506",
     "summary": "Fetch Upload URL",
     "tag": "Dispute",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "GET /dispute/export": {
     "path": "/dispute/export",
@@ -1229,7 +1229,7 @@
     "hash": "9f9f7eeb6cd9c8a1f3159f88f3301714ee7a1b5f339a1f001ed9e300aa5d1c35",
     "summary": "Export Disputes",
     "tag": "Dispute",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "GET /dispute/transaction/{id}": {
     "path": "/dispute/transaction/{id}",
@@ -1237,7 +1237,7 @@
     "hash": "a19c09c897f6a2eed5bd929819c141c37d4651434edffb49d3561deca896c533",
     "summary": "List Transaction Disputes",
     "tag": "Dispute",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "PUT /dispute/{id}/resolve": {
     "path": "/dispute/{id}/resolve",
@@ -1245,7 +1245,7 @@
     "hash": "9e691a65816ba704bacfcd034eb7b6a95d5674d8b2f4a19def20631aa08135d2",
     "summary": "Resolve Dispute",
     "tag": "Dispute",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "POST /dispute/{id}/evidence": {
     "path": "/dispute/{id}/evidence",
@@ -1253,7 +1253,7 @@
     "hash": "30c5daa31045a4b4bcc7188dad95c225f773f5bd7b788b5875ba0bf32481b247",
     "summary": "Add Evidence",
     "tag": "Dispute",
-    "updatedAt": "2026-08-23T23:25:29.442Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "GET /bank": {
     "path": "/bank",
@@ -1261,7 +1261,7 @@
     "hash": "4e50b410a89ca96cfd9320a514e6494d4a1d91acab6d6f435160b7cbc8b2b582",
     "summary": "List Banks",
     "tag": "Bank",
-    "updatedAt": "2026-08-23T23:25:29.443Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "GET /bank/resolve": {
     "path": "/bank/resolve",
@@ -1269,7 +1269,7 @@
     "hash": "a3a01745c01fdfd1af860bb16e5747a4964f17262c89622e48169c8da558bb78",
     "summary": "Resolve Account Number",
     "tag": "Bank",
-    "updatedAt": "2026-08-23T23:25:29.443Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "POST /bank/validate": {
     "path": "/bank/validate",
@@ -1277,7 +1277,7 @@
     "hash": "f653dbd46dffab8891dd53707bfab4a8e5a0dd303c4e7470d17113ef05901704",
     "summary": "Validate Bank Account",
     "tag": "Bank",
-    "updatedAt": "2026-08-23T23:25:29.443Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "GET /decision/bin/{bin}": {
     "path": "/decision/bin/{bin}",
@@ -1285,7 +1285,7 @@
     "hash": "8ed36b80f20b8fcf1d4c038003123d4263d04f858e71fbb25359969b5988c627",
     "summary": "Resolve Card BIN",
     "tag": "Miscellaneous",
-    "updatedAt": "2026-08-23T23:25:29.443Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "GET /country": {
     "path": "/country",
@@ -1293,7 +1293,7 @@
     "hash": "ac0b2616d0facff7410bc319bbe58596aee5e424388cd6f805aab42260f8ada6",
     "summary": "List Countries",
     "tag": "Miscellaneous",
-    "updatedAt": "2026-08-23T23:25:29.443Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   },
   "GET /address_verification/states": {
     "path": "/address_verification/states",
@@ -1301,6 +1301,6 @@
     "hash": "bc072ae07ded3e190c308b15e39f672da205fe8a230b5e09f248ed467c2c246b",
     "summary": "List States (AVS)",
     "tag": "Miscellaneous",
-    "updatedAt": "2026-08-23T23:25:29.443Z"
+    "updatedAt": "2026-08-25T00:22:38.621Z"
   }
 }
