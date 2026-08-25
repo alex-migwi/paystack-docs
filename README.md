@@ -10,14 +10,6 @@ A self-documenting developer portal for the Paystack API based on an enriched ve
 
 ---
 
-### Proof of Concept
-
-This project was created as part of the DevEx Lead technical assessment at Paystack.
-
-It demonstrates the proposed approach, developer experience, and technical thinking behind the solution. The implementation is intentionally open to further refinement and iteration.
-
----
-
 ## Key Features
 
 - **Interactive API Explorer**:
@@ -151,7 +143,7 @@ For detailed dispatch setup instructions, consult [`docs/DISPATCH_GUIDE.md`](./d
 
 ## License & Assessment Notice
 
-This project was created as part of the DevEx Lead technical assessment at Paystack. It is a proof of concept provided for evaluation purposes.
+This project is a proof of concept provided for evaluation purposes.
 
-See [LICENSE](LICENSE) for the assessment terms.
+See [LICENSE](LICENSE).
 
