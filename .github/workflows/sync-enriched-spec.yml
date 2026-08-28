@@ -8,10 +8,8 @@ on:
       spec_url:
         description: 'Custom URL to paystack-enriched.json'
         required: false
-        default: 'https://raw.githubusercontent.com/Alex-Muturi/paystack-spec-enriched/main/dist/paystack-enriched.json'
-  schedule:
-    - cron: '0 0 * * *' # Daily sync check at midnight UTC
-
+        default: 'https://raw.githubusercontent.com/alex-migwi/paystack-spec-enriched/main/dist/paystack-enriched.json'
+  
 permissions:
   contents: write
 
@@ -34,7 +32,7 @@ jobs:
 
       - name: Fetch Enriched Spec from GitHub
         env:
-          ENRICHED_SPEC_URL: ${{ inputs.spec_url || 'https://raw.githubusercontent.com/Alex-Muturi/paystack-spec-enriched/main/dist/paystack-enriched.json' }}
+          ENRICHED_SPEC_URL: ${{ inputs.spec_url || 'https://raw.githubusercontent.com/alex-migwi/paystack-spec-enriched/main/dist/paystack-enriched.json' }}
         run: node scripts/fetch-enriched-spec.js
 
       - name: Compile Spec & Track Operational Changes
