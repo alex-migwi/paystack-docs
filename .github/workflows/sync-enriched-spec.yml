@@ -10,16 +10,20 @@ on:
         type: string
         required: false
 
-permissions:
-  contents: write
-
 jobs:
   sync-enriched-spec:
     runs-on: ubuntu-latest
 
+    # grant only the minimum permissions needed to open a PR
+    permissions:
+      contents: write
+      pull-requests: write
+
     steps:
       - name: Checkout paystack-docs repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -38,15 +42,24 @@ jobs:
         run: |
           mkdir -p spec
           echo "🌐 GitHub Action fetching spec from remote release: $ENRICHED_SPEC_URL"
-          curl -sSL "$ENRICHED_SPEC_URL" -o spec/paystack-enriched.json
-          echo "✅ Local spec copy updated: spec/paystack-enriched.json"
+          curl -sSL "$ENRICHED_SPEC_URL" -o public/paystack-enriched.json
+          echo "✅ Local spec copy updated: public/paystack-enriched.json"
 
 
       - name: Compile Spec & Track Operational Changes
         run: node scripts/compile-openapi.js
-
-      - name: Commit & Push Updated Local Spec & Generated SDKs
-        uses: stefanzweifel/git-auto-commit-action@v5
+      
+      - name: Create Isolated Spec Update PR via GitHub Bot
+        uses: peter-evans/create-pull-request@v7
         with:
-          commit_message: "chore(spec): sync latest enriched spec & update operational changelog"
-          file_pattern: "public/* packages/*"
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "chore: automated update to enriched spec file"
+          title: "Automated Spec Update"
+          body: "This PR was securely opened by the GitHub Action Bot. It strictly contains updates to enriched sec file."
+          branch: "automation/enriched-spec-update"
+          base: main
+          reviewers: "alex-migwi"
+          
+          # This discard ANY changes made outside of this explicit path.
+          add-paths: |
+            public/paystack-enriched.json
