@@ -2,15 +2,13 @@ name: Sync Enriched Paystack Spec
 
 on:
   repository_dispatch:
-    types: [enriched_spec_updated, spec_enriched, openapi-update]
+    types: [enriched-spec-updated]
   workflow_dispatch:
     inputs:
       spec_url:
         description: 'Custom URL to paystack-enriched.json'
+        type: string
         required: false
-        default: 'https://raw.githubusercontent.com/Alex-Muturi/paystack-spec-enriched/main/dist/paystack-enriched.json'
-  schedule:
-    - cron: '0 0 * * *' # Daily sync check at midnight UTC
 
 permissions:
   contents: write
@@ -32,22 +30,23 @@ jobs:
       - name: Install dependencies
         run: npm ci || npm install
 
-      - name: Fetch Enriched Spec from GitHub
+      - name: Download & Update Local Enriched Spec Copy
+        if: ${{ github.event_name == 'repository_dispatch' || github.event.inputs.spec_url }}
         env:
-          ENRICHED_SPEC_URL: ${{ inputs.spec_url || 'https://raw.githubusercontent.com/Alex-Muturi/paystack-spec-enriched/main/dist/paystack-enriched.json' }}
-        run: node scripts/fetch-enriched-spec.js
+          SPEC_SHA: "${{ github.event.client_payload.sha }}"
+          ENRICHED_SPEC_URL: "${{ github.event.client_payload.sha && 'https://raw.githubusercontent.com/alex-migwi/paystack-spec-enriched/${SPEC_SHA}/dist/paystack-enriched.json' || github.event.inputs.spec_url }}"
+        run: |
+          mkdir -p spec
+          echo "🌐 GitHub Action fetching spec from remote release: $ENRICHED_SPEC_URL"
+          curl -sSL "$ENRICHED_SPEC_URL" -o spec/paystack-enriched.json
+          echo "✅ Local spec copy updated: spec/paystack-enriched.json"
+
 
       - name: Compile Spec & Track Operational Changes
         run: node scripts/compile-openapi.js
 
-      - name: Commit & Push Changes
-        run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git add public/paystack-enriched.json public/paystack.json public/spec-manifest.json public/changelog.json
-          if git diff --staged --quiet; then
-            echo "No changes in Paystack Enriched specification."
-          else
-            git commit -m "chore(spec): sync latest enriched spec & update operational changelog"
-            git push
-          fi
+      - name: Commit & Push Updated Local Spec & Generated SDKs
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(spec): sync latest enriched spec & update operational changelog"
+          file_pattern: "public/* packages/*"
